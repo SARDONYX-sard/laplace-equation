@@ -9,7 +9,7 @@ export function iteration(u: number[][]) {
      */
   const u_next = clone(range({ stop: NX }), NY); // Initialize
 
-  const loopObj = { start: 1, stop: NX - 1 };
+  const loopObj = { start: 1, stop: NX - 1 } as const;
 
   for (let i of range(loopObj)) {
     for (let j of range(loopObj)) {
